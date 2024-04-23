@@ -1,0 +1,2 @@
+# Ignorar archivos del sistema de Mac que usa para indexar y mejora las búsquedas 
+.DS_store
