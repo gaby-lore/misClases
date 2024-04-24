@@ -1,0 +1,15 @@
+body{
+    color: rgb(43, 33, 231);
+}
+
+p{
+    color: green;
+}
+
+.rojo{
+    color: red;
+}
+
+#verde{
+    color:chartreuse;
+}
