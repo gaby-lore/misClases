@@ -3,7 +3,7 @@ body{
 }
 
 p{
-    color: green;
+    color: rgb(219, 247, 7);
 }
 
 .rojo{
@@ -13,3 +13,4 @@ p{
 #verde{
     color:chartreuse;
 }
+
