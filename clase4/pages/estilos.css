@@ -15,6 +15,7 @@ p{
 }
 
 .box-model{
+    background-color: blueviolet;
     width: 250px;
     height: 450px;
     padding-top: 10px;
@@ -25,7 +26,8 @@ p{
     margin-bottom: 30px;
     margin-left: 30px;
     margin-right: 10px;
-
+    overflow: auto;
     border: solid 5px;
+    
 }
 
