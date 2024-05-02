@@ -31,3 +31,12 @@ p{
     
 }
 
+#menu{
+    background-color: coral;
+    width: 100%;
+}
+
+ul li{
+    display: inline-block;
+}
+
