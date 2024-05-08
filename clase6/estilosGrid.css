@@ -1,0 +1,19 @@
+.seccion{
+    background-color: chocolate;
+    width: 50%;
+}
+.grid-container{
+    width: 80%;
+    display: grid;
+    background-color: blueviolet;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 50px);
+    gap: 2rem;
+    padding: 2rem;
+}
+.producto{
+    background-color: bisque;
+    padding: 2rem;
+    border: 1px solid black;
+    text-align: center;
+}
