@@ -1,43 +1,79 @@
+<!-- declara el tipo de archivo -->
 <!DOCTYPE html>
-<html>
+<!-- etiqueta de inicio html y pongo el lenguaje en español -->
+<html lang="es">
+  <!-- espacio de comunicacion entre mi sitio web y el navegador -->
   <head>
-    <meta charset="utf-8">
-    <title>Mi primer sitio web</title>
-    <link rel="stylesheet" href="./pages/estilos.css">
+    <!-- el atributo charset para trabajar con caracteres latinos -->
+    <meta charset="UTF-8" />
+    <!-- el atributo name en viewport para trabajar con responsive y que se vea bien en cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- el titulo que se va a ver en el navegador -->
+    <title>PAGINA DE GABY</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    />
   </head>
+  <!-- el cuerpo de todo misitio web va en la etiqueta body -->
   <body>
-    <header id="arriba">header dentro del body <a class="rojo" href="#pie"> Ir abajo </a> </header>
-    <h1>Encabezado nivel 1</h1>
-    <link rel="stylesheet" href="./pages/estilos.css">
-	<h2 class="rojo">Mi nombre es:</h2> Gabriela Lorenzze 
-	<h2>Objetivos del curso: Desarrollar sitios web clase 2</h2> 
-	<h3>Mini bio:</h3> Esta es mi biografía de clase 2
-    <hr>
-        <h4>Multimedia en html</h4>
-        <img src="./imagenes/perrito.jpeg" alt="cachorro" />
-        <video src="./videos/videito.mp4" controls>
-            Tu navegador no implementa el elemento  <code>video</code>.
-        </video>
-                  <iframe width="796" height="467" src="https://www.youtube.com/embed/dzXPqtHaptU" title="Corto de pixar &quot;ajedrez&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <hr>
-        <h5 id="verde">Lista Viñetas</h5>
-        <ol id="verde">
-            <li>Anna</li>
-            <li>Bettiana</li>
-            <li>Cammila</li>
-            <li>Gabriella</li>
-            <li>Johanna</li>
-        </ol>
-    <hr>
-        <h5>Pasos para preparar mate</h5>
-        <ul>
-            <li>Llenar un termo con agua caliente. Para que la temperatura de tu mate esté en su punto justo, asegurate de que no esté ni tibia ni hirviendo. ...</li>
-            <li>Poner yerba en el mate y agitar. ...</li>
-            <li>Recostar, formar un hueco y derramar agua tibia. ...</li>
-            <li>Introducir la bombilla. ...</li>
-            <li>Cebar. ...</li>
-            <li>Compartir un momento...............</li>
-        </ul>
-    <footer id="pie"> <div>Pie de la pagina siempre dentro del body</div> <div><a id="verde" href="#arriba">Ir arriba</a></div></footer>
-</body>
+    <div>
+      <!-- en el header va el logo, menu de navegacion y el 
+        titulo con h1 aunque a veces puede ir fuera debajo del
+        header -->
+      <header id="arriba" class="encabezado">
+        <nav>
+          <ul class="menuSuperior">
+            <!-- Enlaces internos estoy redirijiendo una parte de mi pagina -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./pages/personajes.html">Personajes</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Nosotros</a></li>
+          </ul>
+          <div><a href="#abajo">Ir abajo</a></div>
+        </nav>
+      </header>
+    </div>
+    <!-- las etiquetas h son con cierre y son en bloque, 
+    ocupan el 100 % de la pantalla la importancia de cada
+    encabezado crece de menor a mayor nivel de h, sin 
+    importar el tamaño de la fuente -->
+    <section class="texto">
+      <h1>REINO ANIMAL</h1>
+      <h2>Vertebrados</h2>
+      <h3>Mamiferos</h3>
+      <h4>Bipedos</h4>
+      <h4>Cuadrupedos</h4>
+      <h3>Aves</h3>
+      <h4>Voladoras</h4>
+      <h4>No Voladoras</h4>
+      <h3>Reptiles</h3>
+      <h3>Peces</h3>
+      <h3>Anfibios</h3>
+      <h2>Invertebrados</h2>
+      <h3>Insectos</h3>
+      <h4>Voladores</h4>
+      <h4>No voladores</h4>
+    </section>
+
+    <section>
+      <p class="rojo">Mi contenido con estilo</p>
+      <p id="verde">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        quibusdam repellendus officiis? Repudiandae ullam quod asperiores
+        officia quos voluptatem harum, in necessitatibus minima eligendi tempore
+        fugit placeat assumenda et unde?
+      </p>
+    </section>
+
+    <footer id="abajo" class="footer">
+      <div>Pie de Pagina</div>
+      <div><a href="#arriba">ir arriba</a></div>
+    </footer>
+  </body>
 </html>

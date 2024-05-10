@@ -1,41 +1,159 @@
+<!-- declara el tipo de archivo -->
 <!DOCTYPE html>
-<html>
+<!-- etiqueta de inicio html y pongo el lenguaje en español -->
+<html lang="es">
+  <!-- espacio de comunicacion entre mi sitio web y el navegador -->
   <head>
-    <meta charset="utf-8">
-    <title>Mi primer sitio web</title>
-    <h1>Encabezado nivel 1</h1>
+    <!-- el atributo charset para trabajar con caracteres latinos -->
+    <meta charset="UTF-8" />
+    <!-- el atributo name en viewport para trabajar con responsive y que se vea bien en cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- el titulo que se va a ver en el navegador -->
+    <title>PAGINA DE GABY</title>
   </head>
+  <!-- el cuerpo de todo misitio web va en la etiqueta body -->
   <body>
-	<h2>Mi nombre es:</h2> Gabriela Lorenzze 
-	<h2>Objetivos del curso: Desarrollar sitios web clase 2</h2> 
-	<h3>Mini bio:</h3> Esta es mi biografía de clase 2
-    <hr>
-        <h4>Multimedia en html</h4>
-        <img src="./imagenes/perrito.jpeg" alt="cachorro" />
-        <video src="./videos/videito.mp4" controls>
-            Tu navegador no implementa el elemento  <code>video</code>.
-        </video>
-                  <iframe width="796" height="467" src="https://www.youtube.com/embed/dzXPqtHaptU" title="Corto de pixar &quot;ajedrez&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                  </iframe>
-    <hr>
-        <h5>Lista Viñetas</h5>
+    <!-- las etiquetas h son con cierre y son en bloque, 
+    ocupan el 100 % de la pantalla la importancia de cada
+    encabezado crece de menor a mayor nivel de h, sin 
+    importar el tamaño de la fuente -->
+    <!-- <h1>REINO ANIMAL</h1>
+    <h2>Vertebrados</h2>
+    <h3>Mamiferos</h3>
+    <h4>Bipedos</h4>
+    <h4>Cuadrupedos</h4>
+    <h3>Aves</h3>
+    <h4>Voladoras</h4>
+    <h4>No Voladoras</h4>
+    <h3>Reptiles</h3>
+    <h3>Peces</h3>
+    <h3>Anfibios</h3>
+    <h2>Invertebrados</h2>
+    <h3>Insectos</h3>
+    <h4>Voladores</h4>
+    <h4>No voladores</h4> -->
+    <div>
+      <!-- en el header va el logo, menu de navegacion y el 
+      titulo con h1 aunque a veces puede ir fuera debajo del
+      header -->
+      <header>
+        <h1>Este es el espacio para el header: Encabezado nivel 1</h1>
+        <img src="./imagenes/gatito.jpeg" alt="gatito" />
+      </header>
+    </div>
+
+    <h2>Subtitulo-Mi nombre es:</h2>
+    Gabriela Lorenzze
+    <h2>Subtitulo-Objetivos del curso:</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia illum
+    deleniti quo voluptatem ut saepe, officiis magni omnis dolor voluptate
+    distinctio incidunt excepturi dolores rerum, laboriosam repellat sit? Earum,
+    ab.
+    <h3>Mini Bio:</h3>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident vitae,
+    autem, sunt labore nulla itaque tempore nihil aspernatur ipsa sit aut,
+    quibusdam inventore explicabo blanditiis? Nobis debitis exercitationem
+    ratione illum!
+
+    <div>
+      <aside><h6>Espacio para los banner con publicidades :)</h6></aside>
+    </div>
+
+    <!-- Linea no es neceesario cerrarla etiqueta -->
+    <hr />
+
+    <h4>Elementos Multimedia de html</h4>
+    <img
+      src="./imagenes/vegetation_flowers_plants_teide_violet_canary_islands_flora_icon_142055 (1).png"
+      alt="flores"
+    />
+    <audio
+      src="./audios/top-250-production-element-logo-piano-har.mp3"
+      preload="auto"
+      controls
+    ></audio>
+    <video
+      src="./videos/Beige Minimalist Animated Loading YouTube Intro.mp4"
+      controls
+      width="300"
+    >
+      <code> </code>
+    </video>
+    <!-- <iframe src="./videos/download.html" frameborder="0"></iframe> -->
+    <iframe
+      src="https://videocdn.cdnpk.net/excite/content/video/premium/video0521/large_watermarked/GENERAL_SA_AERIAL_00080_preview.mp4"
+      frameborder="0"
+    ></iframe>
+
+    <div>
+      <footer>Contacto | Copyrigth 2024</footer>
+    </div>
+
+    <hr />
+
+    <h4>Listas</h4>
+    <h5>Lista Ordenada</h5>
+    <ol>
+      <li>Paso 1</li>
+      <li>Paso 2</li>
+      <li>Paso 3</li>
+    </ol>
+
+    <h5>Lista Vineta o Desordenada</h5>
+    <!-- nav es para construir el menu de navegacion -->
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Tienda</li>
+        <li>Contacto</li>
+        <li>Nosotros</li>
+      </ul>
+    </nav>
+
+    <h5> Listas de Definicion</h5>
+    <dl>
+      <dt> Brujula</dt>
+      <dd> Señórula montada en una escóbula</dd>
+      <dt> Oreja</dt>
+      <dd> Sesenta minutejos</dd>
+    </dl>
+
+    <hr />
+
+    <h5> Desplazamientos</h5>
+    <dl>
+      <dd>
+        Primer nivel de desplazamiento
+        <dl>
+          <dd>
+            Segundo nivel de desplazamiento
+            <dl>
+              <dd>Tercer nivel de desplazamiento</dd>
+            </dl>
+          </dd>
+        </dl>
+      </dd>
+    </dl>
+
+    <hr />
+
+    <h5>Ciudades del mundo</h5>
+    <ul>
+      <li>
+        Argentina
         <ol>
-            <li>Anna</li>
-            <li>Bettiana</li>
-            <li>Cammila</li>
-            <li>Gabriella</li>
-            <li>Johanna</li>
+          <li>Buenos Aires</li>
+          <li>Bariloche</li>
         </ol>
-    <hr>
-        <h5>Pasos para preparar mate</h5>
-        <ul>
-            <li>Llenar un termo con agua caliente. Para que la temperatura de tu mate esté en su punto justo, asegurate de que no esté ni tibia ni hirviendo. ...</li>
-            <li>Poner yerba en el mate y agitar. ...</li>
-            <li>Recostar, formar un hueco y derramar agua tibia. ...</li>
-            <li>Introducir la bombilla. ...</li>
-            <li>Cebar. ...</li>
-            <li>Compartir un momento...............</li>
-        </ul>
-    <footer> Pie de la pagina siempre dentro del body</footer>
-</body>
+      </li>
+
+      <li>
+        Uruguay
+        <ol>
+          <li>Montevideo</li>
+          <li>Punta del Este</li>
+        </ol>
+      </li>
+    </ul>
+  </body>
 </html>
