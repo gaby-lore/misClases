@@ -1,0 +1,51 @@
+.contenedor_padre{
+    background-color: bisque;
+    display: flex;
+}
+.caja{
+    height: 150px;
+    width: 150px;
+}
+.rojo{
+    background-color: red;
+}
+.azul{
+    background-color: blue;
+}
+.rosa{
+    background-color: pink;
+}
+.naranja{
+    background-color: orange;
+}
+.amarillo{
+    background-color: yellow;
+    height: 200px;
+}
+
+.header{
+    display: flex;
+    background-color: rgb(234, 28, 5);
+}
+.logo{
+    background-color: aqua;
+    width: 20%;
+
+}
+.menu{
+background-color: brown;
+width: 60%;
+}
+.menu ul{
+    background-color: aquamarine;
+    display: flex;
+
+}
+.login{
+background-color: blueviolet;
+width: 20%;
+}
+.verde{
+    background-color: green;
+    text-align: center;
+}

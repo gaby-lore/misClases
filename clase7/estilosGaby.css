@@ -1,0 +1,75 @@
+/* grid por areas */
+/* Selector Universal RESETEO de css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*los pixeles son unidades de medida absoluta, independiente del dispositivo que uso, van a ser siempre xx px, para solucionar esto y garantizar una pagina responsive, se trabaja con una medida relativa que son los rem cuya equivalencia es 1rem=16px Recomendacion: bajar 1 rem a 10 px para que sea mas intituivo entonces, para que 1 rem valga 10 px hago lo siguiente: */
+html {
+  font-size: 10px;
+}
+.borde {
+  border: 0.1rem solid rgb(120, 33, 33);
+}
+#grilla {
+  display: grid;
+  grid-template-areas:
+    "nav header header"
+    "nav producto publicidad"
+    "nav servicio publicidad"
+    "nav footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-template-columns: 15% auto 15%;
+    grid-row: 10px;
+    column-gap: 0.1rem;
+    row-gap: 0.1rem;
+    height: 100vh;
+}
+.header {
+  background-color: blueviolet;
+  grid-area: header;
+}
+.menuSuperior { 
+  /*para quitar las viñetas en el menu*/
+  list-style: none; 
+  text-align: center;
+ } 
+.menuSuperior li {
+  /*Usando el concepto de herencia, le digo: anda a menuSuperior y solo adentro a los li, que se comporten como etiquetas en linea pongo: */
+  display: inline-block; 
+  /*comportate como elemento en linea pero conserva las propiedades de un en bloque.  Si solo quiero se comporte en linea va solo inline*/
+}
+.menuSuperior a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 700; /*para que sea negrita superior a 500*/
+  padding: 4rem;
+  font-size: 1.4rem;
+}
+.navegacion {
+  background-color: blue;
+  grid-area: nav;
+}
+#producto{
+    background-color: skyblue;
+    grid-area: producto;
+}
+#servicio{
+    background-color: greenyellow;
+    grid-area: servicio;
+}
+.aside {
+  background-color: gold;
+  grid-area: publicidad;
+}
+footer {
+  background-color: red;
+  grid-area: footer;
+}
+.menuLateral a{
+  color:azure;
+  font-size: 2rem;
+  padding: 2rem;
+  text-decoration: none;
+  padding-bottom: 5rem;
+}
